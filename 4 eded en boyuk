@@ -1,0 +1,32 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // İstifadəçidən 4 ədəd alınır
+        Console.Write("Birinci ədədi daxil edin: ");
+        int a = int.Parse(Console.ReadLine());
+
+        Console.Write("İkinci ədədi daxil edin: ");
+        int b = int.Parse(Console.ReadLine());
+
+        Console.Write("Üçüncü ədədi daxil edin: ");
+        int c = int.Parse(Console.ReadLine());
+
+        Console.Write("Dördüncü ədədi daxil edin: ");
+        int d = int.Parse(Console.ReadLine());
+
+        // Ən böyüyü tapırıq
+        int max = a;
+
+        if (b > max)
+            max = b;
+        if (c > max)
+            max = c;
+        if (d > max)
+            max = d;
+
+        Console.WriteLine("Ən böyük ədəd: " + max);
+    }
+}
