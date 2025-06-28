@@ -1,0 +1,16 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("1-93 arası tək ədədlərin kvadratları:");
+        for (int i = 1; i <= 93; i++)
+        {
+            if (i % 2 != 0)
+            {
+                Console.WriteLine($"{i}^2 = {i * i}");
+            }
+        }
+    }
+}
