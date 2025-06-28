@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("1-75 arası tək ədədlər:");
+        for (int i = 1; i <= 75; i++)
+        {
+            if (i % 2 != 0)
+            {
+                Console.Write(i + " ");
+            }
+        }
+        Console.WriteLine();
+    }
+}
