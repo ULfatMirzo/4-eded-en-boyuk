@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Ədədi daxil edin: ");
+        int num = int.Parse(Console.ReadLine());
+
+        if (num == 0)
+            Console.WriteLine("Ədəd sıfırdır.");
+        else if (num > 0)
+            Console.WriteLine(num % 2 == 0 ? "Müsbət cüt ədəddir." : "Müsbət tək ədəddir.");
+        else
+            Console.WriteLine(num % 2 == 0 ? "Mənfi cüt ədəddir." : "Mənfi tək ədəddir.");
+    }
+}
