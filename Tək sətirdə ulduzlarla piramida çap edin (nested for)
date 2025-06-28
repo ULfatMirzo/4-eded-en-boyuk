@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Piramidanın hündürlüyünü daxil edin: ");
+        int n = int.Parse(Console.ReadLine());
+
+        for (int i = 1; i <= n; i++)
+        {
+            // Boşluqlar
+            for (int j = n - i; j > 0; j--)
+                Console.Write(" ");
+
+            // Ulduzlar
+            for (int k = 1; k <= (2 * i - 1); k++)
+                Console.Write("*");
+
+            Console.WriteLine();
+        }
+    }
+}
