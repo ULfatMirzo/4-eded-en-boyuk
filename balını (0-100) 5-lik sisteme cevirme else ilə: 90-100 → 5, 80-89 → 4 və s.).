@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Balınızı daxil edin (0-100): ");
+        int score = int.Parse(Console.ReadLine());
+
+        if (score >= 90 && score <= 100)
+            Console.WriteLine("Qiymət: 5");
+        else if (score >= 80)
+            Console.WriteLine("Qiymət: 4");
+        else if (score >= 70)
+            Console.WriteLine("Qiymət: 3");
+        else if (score >= 60)
+            Console.WriteLine("Qiymət: 2");
+        else if (score >= 0)
+            Console.WriteLine("Qiymət: 1");
+        else
+            Console.WriteLine("Yanlış bal daxil edildi.");
+    }
+}
