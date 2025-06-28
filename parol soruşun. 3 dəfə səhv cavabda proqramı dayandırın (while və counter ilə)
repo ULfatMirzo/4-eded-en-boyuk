@@ -1,0 +1,28 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        const string correctPassword = "12345";
+        int attempts = 0;
+
+        while (attempts < 3)
+        {
+            Console.Write("Parolu daxil edin: ");
+            string input = Console.ReadLine();
+
+            if (input == correctPassword)
+            {
+                Console.WriteLine("Düzgün parol daxil etdiniz.");
+                return;
+            }
+            else
+            {
+                attempts++;
+                Console.WriteLine($"Səhv parol! Qalan cəhd sayı: {3 - attempts}");
+            }
+        }
+        Console.WriteLine("3 dəfə səhv daxil etdiniz. Proqram dayandırılır.");
+    }
+}
