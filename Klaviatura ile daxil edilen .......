@@ -1,0 +1,49 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Ədədi daxil edin: ");
+        int number = int.Parse(Console.ReadLine());
+
+        double sqrt = Math.Sqrt(number);  // Kvadrat kök
+
+        if (sqrt == (int)sqrt)
+        {
+            Console.WriteLine($"{number} = {sqrt}^2, yəni bu ədəd hansısa ədədin kvadratıdır.");
+        }
+        else
+        {
+            Console.WriteLine($"{number} heç bir tam ədədin kvadratı deyil.");
+        }
+    }
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXxxx
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Ədədi daxil edin: ");
+        string number = Console.ReadLine();
+
+        string reversed = "";
+
+        for (int i = number.Length - 1; i >= 0; i--)
+        {
+            reversed += number[i];
+        }
+
+        if (number == reversed)
+        {
+            Console.WriteLine($"{number} palindromdur.");
+        }
+        else
+        {
+            Console.WriteLine($"{number} palindrom deyil.");
+        }
+    }
+}
