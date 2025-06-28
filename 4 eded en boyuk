@@ -30,3 +30,38 @@ class Program
         Console.WriteLine("Ən böyük ədəd: " + max);
     }
 }
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+minimummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Birinci ədədi daxil edin: ");
+        int a = int.Parse(Console.ReadLine());
+
+        Console.Write("İkinci ədədi daxil edin: ");
+        int b = int.Parse(Console.ReadLine());
+
+        Console.Write("Üçüncü ədədi daxil edin: ");
+        int c = int.Parse(Console.ReadLine());
+
+        Console.Write("Dördüncü ədədi daxil edin: ");
+        int d = int.Parse(Console.ReadLine());
+
+        int min = a;  // əvvəlcə birinci ədəd ən kiçik sayılır
+
+        if (b < min)
+            min = b;
+        if (c < min)
+            min = c;
+        if (d < min)
+            min = d;
+
+        Console.WriteLine("Ən kiçik ədəd: " + min);
+    }
+}
+
