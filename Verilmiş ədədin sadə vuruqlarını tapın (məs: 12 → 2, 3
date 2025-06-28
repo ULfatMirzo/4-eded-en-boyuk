@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Ədədi daxil edin: ");
+        int n = int.Parse(Console.ReadLine());
+
+        List<int> primes = new List<int>();
+
+        int num = n;
+
+        for (int i = 2; i <= num / i; i++)
+        {
+            while (num % i == 0)
+            {
+                if (!primes.Contains(i))
+                    primes.Add(i);
+                num /= i;
+            }
+        }
+
+        if (num > 1 && !primes.Contains(num))
+            primes.Add(num);
+
+        Console.WriteLine($"{n} ədədinin sadə vuruqları: {string.Join(", ", primes)}");
+    }
+}
