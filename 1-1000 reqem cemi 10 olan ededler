@@ -1,0 +1,26 @@
+using System;
+
+class Program
+{
+    static int SumOfDigits(int num)
+    {
+        int sum = 0;
+        while (num > 0)
+        {
+            sum += num % 10;
+            num /= 10;
+        }
+        return sum;
+    }
+
+    static void Main()
+    {
+        Console.WriteLine("Rəqəmlərinin cəmi 10 olan ədədlər (1-1000):");
+        for (int i = 1; i <= 1000; i++)
+        {
+            if (SumOfDigits(i) == 10)
+                Console.Write(i + " ");
+        }
+        Console.WriteLine();
+    }
+}
