@@ -1,0 +1,40 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Çəkmək istədiyiniz məbləği daxil edin: ");
+        int amount = int.Parse(Console.ReadLine());
+
+        if (amount % 10 != 0)
+        {
+            Console.WriteLine("Məbləğ 10-un tam vurğusu olmalıdır.");
+            return;
+        }
+
+        int count200 = amount / 200;
+        amount %= 200;
+
+        int count100 = amount / 100;
+        amount %= 100;
+
+        int count50 = amount / 50;
+        amount %= 50;
+
+        int count20 = amount / 20;
+        amount %= 20;
+
+        if (amount != 0)
+        {
+            Console.WriteLine("Bu məbləği minimum sayda əskinasla verə bilmirik.");
+            return;
+        }
+
+        Console.WriteLine("Əskinaslar:");
+        if (count200 > 0) Console.WriteLine($"200 AZN: {count200}");
+        if (count100 > 0) Console.WriteLine($"100 AZN: {count100}");
+        if (count50 > 0) Console.WriteLine($"50 AZN: {count50}");
+        if (count20 > 0) Console.WriteLine($"20 AZN: {count20}");
+    }
+}
