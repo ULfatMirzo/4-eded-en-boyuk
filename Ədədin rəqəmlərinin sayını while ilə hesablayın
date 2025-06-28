@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Ədədi daxil edin: ");
+        int num = Math.Abs(int.Parse(Console.ReadLine()));  // mənfi ədədlər üçün abs
+
+        int count = 0;
+        while (num > 0)
+        {
+            num /= 10;
+            count++;
+        }
+
+        Console.WriteLine("Rəqəmlərin sayı: " + count);
+    }
+}
