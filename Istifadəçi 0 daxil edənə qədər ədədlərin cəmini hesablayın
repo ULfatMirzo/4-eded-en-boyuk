@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int sum = 0;
+        int num;
+
+        do
+        {
+            Console.Write("Ədəd daxil edin (0 üçün çıxış): ");
+            num = int.Parse(Console.ReadLine());
+            sum += num;
+        } while (num != 0);
+
+        Console.WriteLine("Daxil edilmiş ədədlərin cəmi: " + sum);
+    }
+}
