@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("4 rəqəmli ədəd daxil edin: ");
+        int number = int.Parse(Console.ReadLine());
+
+        int a = number / 1000;                // minlik
+        int b = (number / 100) % 10;          // yüzlük
+        int c = (number / 10) % 10;           // onluq
+        int d = number % 10;                  // birlik
+
+        int sum = a + b + c + d;
+
+        Console.WriteLine("Rəqəmlər cəmi: " + sum);
+    }
+}
