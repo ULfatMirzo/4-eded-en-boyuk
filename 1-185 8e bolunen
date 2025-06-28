@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("1-185 arası 8-ə bölünən ədədlər:");
+        for (int i = 1; i <= 185; i++)
+        {
+            if (i % 8 == 0)
+            {
+                Console.Write(i + " ");
+            }
+        }
+        Console.WriteLine();
+    }
+}
